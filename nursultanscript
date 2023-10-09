@@ -1,0 +1,149 @@
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Mainframe = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Text = Instance.new("TextLabel")
+local ImageButton = Instance.new("ImageButton")
+local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local KeyLogger = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local Check = Instance.new("TextBox")
+local UICorner_6 = Instance.new("UICorner")
+local Sumbit = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local GetKey = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Mainframe.Name = "Mainframe"
+Mainframe.Parent = ScreenGui
+Mainframe.BackgroundColor3 = Color3.fromRGB(127, 127, 127)
+Mainframe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mainframe.BorderSizePixel = 0
+Mainframe.Position = UDim2.new(0.0168778691, 0, 0.174770042, 0)
+Mainframe.Size = UDim2.new(0, 242, 0, 91)
+Mainframe.Visible = false
+
+TextButton.Parent = Mainframe
+TextButton.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.406579882, 0, 0.576464951, 0)
+TextButton.Size = UDim2.new(0, 143, 0, 38)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Auto-Parry"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+TextButton.MouseButton1Down:connect(function()
+	ScriptHere
+end)
+
+UICorner.Parent = TextButton
+
+Text.Name = "Text"
+Text.Parent = Mainframe
+Text.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+Text.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Text.BorderSizePixel = 0
+Text.Position = UDim2.new(0.0743801668, 0, 0.0879120901, 0)
+Text.Size = UDim2.new(0, 206, 0, 36)
+Text.Font = Enum.Font.SourceSans
+Text.Text = "Nursultan Free Beta"
+Text.TextColor3 = Color3.fromRGB(0, 0, 0)
+Text.TextSize = 14.000
+
+ImageButton.Parent = Mainframe
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(-0.00299072266, 0, 0.574427843, 0)
+ImageButton.Size = UDim2.new(0, 45, 0, 37)
+ImageButton.Image = "rbxassetid://14989797109"
+
+UICorner_2.Parent = ImageButton
+
+UICorner_3.Parent = Mainframe
+
+KeyLogger.Name = "KeyLogger"
+KeyLogger.Parent = ScreenGui
+KeyLogger.BackgroundColor3 = Color3.fromRGB(181, 181, 181)
+KeyLogger.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeyLogger.BorderSizePixel = 0
+KeyLogger.Position = UDim2.new(0.274045795, 0, 0.277266741, 0)
+KeyLogger.Size = UDim2.new(0, 624, 0, 258)
+
+UICorner_4.Parent = KeyLogger
+
+TextLabel.Parent = KeyLogger
+TextLabel.BackgroundColor3 = Color3.fromRGB(176, 176, 176)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 624, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Nursultan Free Beta : Key"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+UICorner_5.Parent = TextLabel
+
+Check.Name = "Check"
+Check.Parent = KeyLogger
+Check.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Check.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Check.BorderSizePixel = 0
+Check.Position = UDim2.new(0.0673076957, 0, 0.360465109, 0)
+Check.Size = UDim2.new(0, 539, 0, 50)
+Check.Font = Enum.Font.SourceSans
+Check.Text = "Put Key Right Here"
+Check.TextColor3 = Color3.fromRGB(0, 0, 0)
+Check.TextSize = 14.000
+
+UICorner_6.Parent = Check
+
+Sumbit.Name = "Sumbit"
+Sumbit.Parent = KeyLogger
+Sumbit.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+Sumbit.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Sumbit.BorderSizePixel = 0
+Sumbit.Position = UDim2.new(0.339743584, 0, 0.558139563, 0)
+Sumbit.Size = UDim2.new(0, 200, 0, 50)
+Sumbit.Font = Enum.Font.SourceSans
+Sumbit.Text = "Enter"
+Sumbit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Sumbit.TextSize = 14.000
+Submit.MouseButton1Click:Connect(function()
+	if Check.Text == "zyc9481gx8371d" then
+		KeyLogger.Visible = false
+		wait(0.5)
+		Mainframe.Visible = true
+	end
+end)
+UICorner_7.Parent = Sumbit
+
+GetKey.Name = "GetKey"
+GetKey.Parent = KeyLogger
+GetKey.BackgroundColor3 = Color3.fromRGB(98, 98, 98)
+GetKey.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GetKey.BorderSizePixel = 0
+GetKey.Position = UDim2.new(0.339743584, 0, 0.806201577, 0)
+GetKey.Size = UDim2.new(0, 200, 0, 50)
+GetKey.Font = Enum.Font.SourceSans
+GetKey.Text = "Get Key"
+GetKey.TextColor3 = Color3.fromRGB(0, 0, 0)
+GetKey.TextSize = 14.000
+GetKey.MouseButton1Click:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {title = "Copied!", Text = "Link Successfully copied!", icon = "", Duration = 4})
+	wait (1)
+	setclipboard("https://link-center.net/973003/nursultan-free-key")
+end)
+
+UICorner_8.Parent = GetKey
